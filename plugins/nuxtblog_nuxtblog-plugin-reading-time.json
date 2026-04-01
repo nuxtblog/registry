@@ -1,0 +1,19 @@
+{
+  "name": "nuxtblog-plugin-reading-time",
+  "title": "阅读时间",
+  "description": "在文章渲染时自动计算并注入阅读时间提示",
+  "version": "0.1.1",
+  "author": "nuxtblog",
+  "icon": "i-tabler-clock",
+  "repo": "nuxtblog/nuxtblog-plugin-reading-time",
+  "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-reading-time",
+  "tags": [
+    "reading-time",
+    "ux"
+  ],
+  "type": "hook",
+  "is_official": false,
+  "license": "MIT",
+  "published_at": "2026-04-01T16:41:53.550Z",
+  "updated_at": "2026-04-01T16:41:53.550Z"
+}
