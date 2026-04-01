@@ -1,0 +1,20 @@
+{
+  "name": "pinyin-slug",
+  "title": "拼音 Slug",
+  "description": "发布/修改文章时，自动将中文标题转换为拼音 slug（支持中英文混排）",
+  "version": "0.0.3",
+  "author": "nuxtblog",
+  "icon": "i-tabler-language",
+  "repo": "nuxtblog/nuxtblog-plugin-pinyin-slug",
+  "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-pinyin-slug",
+  "tags": [
+    "slug",
+    "chinese",
+    "seo"
+  ],
+  "type": "hook",
+  "is_official": false,
+  "license": "MIT",
+  "published_at": "2026-03-27T20:28:22.708Z",
+  "updated_at": "2026-03-27T20:38:17.352Z"
+}

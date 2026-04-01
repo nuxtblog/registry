@@ -1,9 +1,9 @@
-name: Validate Registry
+name: Validate Plugin
 
 on:
   pull_request:
     paths:
-      - registry.json
+      - plugins/**
       - .github/scripts/validate.js
 
 jobs:
@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Validate registry.json
+      - name: Validate changed plugin files
         run: node .github/scripts/validate.js
