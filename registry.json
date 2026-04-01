@@ -18,5 +18,26 @@
     "license": "MIT",
     "published_at": "2026-03-27T20:28:22.708Z",
     "updated_at": "2026-04-01T06:12:49.490Z"
+  },
+  {
+    "name": "nuxtblog-plugin-comment-filter",
+    "title": "评论过滤",
+    "description": "评论垃圾过滤：关键词黑名单、邮箱域名屏蔽、链接密度检测、长度限制",
+    "version": "0.1.0",
+    "author": "nuxtblog",
+    "icon": "i-tabler-shield-check",
+    "repo": "nuxtblog/nuxtblog-plugin-comment-filter",
+    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-comment-filter",
+    "tags": [
+      "spam",
+      "comment",
+      "filter",
+      "moderation"
+    ],
+    "type": "hook",
+    "is_official": false,
+    "license": "MIT",
+    "published_at": "2026-04-01T16:10:13.316Z",
+    "updated_at": "2026-04-01T16:10:13.316Z"
   }
 ]
