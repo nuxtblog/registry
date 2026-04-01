@@ -18,5 +18,24 @@
     "license": "MIT",
     "published_at": "2026-03-27T20:28:22.708Z",
     "updated_at": "2026-04-01T06:12:49.490Z"
+  },
+  {
+    "name": "nuxtblog-plugin-auto-excerpt",
+    "title": "自动摘要",
+    "description": "发布/修改文章时，自动从正文内容生成摘要（支持 Markdown / HTML 剥离）",
+    "version": "0.1.0",
+    "author": "nuxtblog",
+    "icon": "i-tabler-text-caption",
+    "repo": "nuxtblog/nuxtblog-plugin-auto-excerpt",
+    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-auto-excerpt",
+    "tags": [
+      "excerpt",
+      "seo"
+    ],
+    "type": "hook",
+    "is_official": false,
+    "license": "MIT",
+    "published_at": "2026-04-01T16:08:08.313Z",
+    "updated_at": "2026-04-01T16:08:08.313Z"
   }
 ]
