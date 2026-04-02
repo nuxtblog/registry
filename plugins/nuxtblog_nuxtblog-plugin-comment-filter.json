@@ -7,15 +7,15 @@
   "icon": "i-tabler-shield-check",
   "repo": "nuxtblog/nuxtblog-plugin-comment-filter",
   "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-comment-filter",
-  "tags": [
-    "spam",
-    "comment",
-    "filter",
-    "moderation"
-  ],
-  "type": "hook",
-  "is_official": false,
+  "tags": ["spam", "comment", "filter", "moderation"],
+  "type": "moderation",
+  "is_official": true,
   "license": "MIT",
+  "min_host_version": "",
+  "sdk_version": "",
+  "trust_level": "official",
+  "capabilities": [],
+  "features": [],
   "published_at": "2026-04-01T16:41:55.266Z",
   "updated_at": "2026-04-01T16:41:55.266Z"
 }

@@ -7,13 +7,15 @@
   "icon": "i-tabler-text-caption",
   "repo": "nuxtblog/nuxtblog-plugin-auto-excerpt",
   "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-auto-excerpt",
-  "tags": [
-    "excerpt",
-    "seo"
-  ],
+  "tags": ["excerpt", "seo"],
   "type": "hook",
-  "is_official": false,
+  "is_official": true,
   "license": "MIT",
+  "min_host_version": "",
+  "sdk_version": "",
+  "trust_level": "official",
+  "capabilities": [],
+  "features": [],
   "published_at": "2026-04-01T16:41:49.852Z",
   "updated_at": "2026-04-01T16:41:49.852Z"
 }

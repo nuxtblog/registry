@@ -1,94 +1,9 @@
 [
   {
-<<<<<<< HEAD
-    "name": "nuxtblog/ai-polish",
+    "name": "nuxtblog-plugin-ai-polish",
     "title": "AI 写作助手",
     "description": "AI 写作助手：润色、摘要、标签推荐、翻译、从 URL 生成文章",
     "version": "1.0.0",
-=======
-    "name": "nuxtblog-plugin-telegram-notify",
-    "title": "Telegram 通知",
-    "description": "文章发布后通过 Telegram Bot 推送通知到指定频道或群组",
-    "version": "0.1.1",
-    "author": "nuxtblog",
-    "icon": "i-tabler-brand-telegram",
-    "repo": "nuxtblog/nuxtblog-plugin-telegram-notify",
-    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-telegram-notify",
-    "tags": [
-      "telegram",
-      "notification"
-    ],
-    "type": "hook",
-    "is_official": false,
-    "license": "MIT",
-    "published_at": "2026-04-01T16:42:00.067Z",
-    "updated_at": "2026-04-01T16:42:00.067Z"
-  },
-  {
-    "name": "nuxtblog-plugin-comment-filter",
-    "title": "评论过滤",
-    "description": "评论垃圾过滤：关键词黑名单、邮箱域名屏蔽、链接密度检测、长度限制",
-    "version": "0.1.1",
-    "author": "nuxtblog",
-    "icon": "i-tabler-shield-check",
-    "repo": "nuxtblog/nuxtblog-plugin-comment-filter",
-    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-comment-filter",
-    "tags": [
-      "spam",
-      "comment",
-      "filter",
-      "moderation"
-    ],
-    "type": "hook",
-    "is_official": false,
-    "license": "MIT",
-    "published_at": "2026-04-01T16:41:55.266Z",
-    "updated_at": "2026-04-01T16:41:55.266Z"
-  },
-  {
-    "name": "nuxtblog-plugin-reading-time",
-    "title": "阅读时间",
-    "description": "在文章渲染时自动计算并注入阅读时间提示",
-    "version": "0.1.1",
-    "author": "nuxtblog",
-    "icon": "i-tabler-clock",
-    "repo": "nuxtblog/nuxtblog-plugin-reading-time",
-    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-reading-time",
-    "tags": [
-      "reading-time",
-      "ux"
-    ],
-    "type": "hook",
-    "is_official": false,
-    "license": "MIT",
-    "published_at": "2026-04-01T16:41:53.550Z",
-    "updated_at": "2026-04-01T16:41:53.550Z"
-  },
-  {
-    "name": "nuxtblog-plugin-auto-excerpt",
-    "title": "自动摘要",
-    "description": "发布/修改文章时，自动从正文内容生成摘要（支持 Markdown / HTML 剥离）",
-    "version": "0.1.1",
-    "author": "nuxtblog",
-    "icon": "i-tabler-text-caption",
-    "repo": "nuxtblog/nuxtblog-plugin-auto-excerpt",
-    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-auto-excerpt",
-    "tags": [
-      "excerpt",
-      "seo"
-    ],
-    "type": "hook",
-    "is_official": false,
-    "license": "MIT",
-    "published_at": "2026-04-01T16:41:49.852Z",
-    "updated_at": "2026-04-01T16:41:49.852Z"
-  },
-  {
-    "name": "pinyin-slug",
-    "title": "拼音 Slug",
-    "description": "发布/修改文章时，自动将中文标题转换为拼音 slug（支持中英文混排）",
-    "version": "0.0.5",
->>>>>>> f1a1af595bb33ebcd979edfa743736f38d40c0c7
     "author": "nuxtblog",
     "icon": "i-tabler-sparkles",
     "repo": "nuxtblog/nuxtblog-plugin-ai-polish",
@@ -102,7 +17,6 @@
     "type": "editor",
     "is_official": true,
     "license": "MIT",
-<<<<<<< HEAD
     "min_host_version": "2.0.0",
     "sdk_version": "0.1.0",
     "trust_level": "official",
@@ -121,10 +35,159 @@
     "updated_at": "2026-04-03T00:00:00.000Z"
   },
   {
+    "name": "nuxtblog-plugin-comment-guard",
+    "title": "评论防护",
+    "description": "评论防护：垃圾过滤 + 速率限制 + AI 审核 + Webhook 通知",
+    "version": "1.0.0",
+    "author": "nuxtblog",
+    "icon": "i-tabler-shield-check",
+    "repo": "nuxtblog/nuxtblog-plugin-comment-guard",
+    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-comment-guard",
+    "tags": [
+      "comment",
+      "spam",
+      "moderation",
+      "ai"
+    ],
+    "type": "moderation",
+    "is_official": true,
+    "license": "MIT",
+    "min_host_version": "2.0.0",
+    "sdk_version": "0.1.0",
+    "trust_level": "official",
+    "capabilities": [
+      "store",
+      "ai",
+      "http"
+    ],
+    "features": [
+      "lifecycle",
+      "routes",
+      "contributes",
+      "webhooks",
+      "pipelines"
+    ],
+    "published_at": "2026-04-03T00:00:00.000Z",
+    "updated_at": "2026-04-03T00:00:00.000Z"
+  },
+  {
+    "name": "nuxtblog-plugin-view-counter",
+    "title": "浏览量统计",
+    "description": "精准文章浏览量统计：多种计数模式、去重、每日汇总、后台分析面板",
+    "version": "1.0.0",
+    "author": "nuxtblog",
+    "icon": "i-tabler-chart-bar",
+    "repo": "nuxtblog/nuxtblog-plugin-view-counter",
+    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-view-counter",
+    "tags": [
+      "analytics",
+      "views",
+      "statistics"
+    ],
+    "type": "analytics",
+    "is_official": true,
+    "license": "MIT",
+    "min_host_version": "2.0.0",
+    "sdk_version": "0.1.0",
+    "trust_level": "official",
+    "capabilities": [
+      "store",
+      "db"
+    ],
+    "features": [
+      "lifecycle",
+      "public_js",
+      "routes",
+      "contributes",
+      "migrations",
+      "pages"
+    ],
+    "published_at": "2026-04-03T00:00:00.000Z",
+    "updated_at": "2026-04-03T00:00:00.000Z"
+  },
+  {
+    "name": "nuxtblog-plugin-telegram-notify",
+    "title": "Telegram 通知",
+    "description": "文章发布后通过 Telegram Bot 推送通知到指定频道或群组",
+    "version": "0.1.1",
+    "author": "nuxtblog",
+    "icon": "i-tabler-brand-telegram",
+    "repo": "nuxtblog/nuxtblog-plugin-telegram-notify",
+    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-telegram-notify",
+    "tags": [
+      "telegram",
+      "notification"
+    ],
+    "type": "integration",
+    "is_official": true,
+    "license": "MIT",
+    "min_host_version": "",
+    "sdk_version": "",
+    "trust_level": "official",
+    "capabilities": [
+      "http"
+    ],
+    "features": [
+      "webhooks"
+    ],
+    "published_at": "2026-04-01T16:42:00.067Z",
+    "updated_at": "2026-04-01T16:42:00.067Z"
+  },
+  {
+    "name": "nuxtblog-plugin-comment-filter",
+    "title": "评论过滤",
+    "description": "评论垃圾过滤：关键词黑名单、邮箱域名屏蔽、链接密度检测、长度限制",
+    "version": "0.1.1",
+    "author": "nuxtblog",
+    "icon": "i-tabler-shield-check",
+    "repo": "nuxtblog/nuxtblog-plugin-comment-filter",
+    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-comment-filter",
+    "tags": [
+      "spam",
+      "comment",
+      "filter",
+      "moderation"
+    ],
+    "type": "moderation",
+    "is_official": true,
+    "license": "MIT",
+    "min_host_version": "",
+    "sdk_version": "",
+    "trust_level": "official",
+    "capabilities": [],
+    "features": [],
+    "published_at": "2026-04-01T16:41:55.266Z",
+    "updated_at": "2026-04-01T16:41:55.266Z"
+  },
+  {
+    "name": "nuxtblog-plugin-reading-time",
+    "title": "阅读时间",
+    "description": "在文章渲染时自动计算并注入阅读时间提示",
+    "version": "0.1.1",
+    "author": "nuxtblog",
+    "icon": "i-tabler-clock",
+    "repo": "nuxtblog/nuxtblog-plugin-reading-time",
+    "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-reading-time",
+    "tags": [
+      "reading-time",
+      "ux"
+    ],
+    "type": "hook",
+    "is_official": true,
+    "license": "MIT",
+    "min_host_version": "",
+    "sdk_version": "",
+    "trust_level": "official",
+    "capabilities": [],
+    "features": [],
+    "published_at": "2026-04-01T16:41:53.550Z",
+    "updated_at": "2026-04-01T16:41:53.550Z"
+  },
+  {
     "name": "nuxtblog-plugin-auto-excerpt",
     "title": "自动摘要",
     "description": "发布/修改文章时，自动从正文内容生成摘要（支持 Markdown / HTML 剥离）",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": "nuxtblog",
     "icon": "i-tabler-text-caption",
     "repo": "nuxtblog/nuxtblog-plugin-auto-excerpt",
@@ -141,14 +204,14 @@
     "trust_level": "official",
     "capabilities": [],
     "features": [],
-    "published_at": "2026-04-01T16:08:08.313Z",
-    "updated_at": "2026-04-01T16:08:08.313Z"
+    "published_at": "2026-04-01T16:41:49.852Z",
+    "updated_at": "2026-04-01T16:41:49.852Z"
   },
   {
-    "name": "pinyin-slug",
+    "name": "nuxtblog-plugin-",
     "title": "拼音 Slug",
     "description": "发布/修改文章时，自动将中文标题转换为拼音 slug（支持中英文混排）",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": "nuxtblog",
     "icon": "i-tabler-language",
     "repo": "nuxtblog/nuxtblog-plugin-pinyin-slug",
@@ -170,10 +233,6 @@
       "admin_js"
     ],
     "published_at": "2026-03-27T20:28:22.708Z",
-    "updated_at": "2026-04-01T06:12:49.490Z"
-=======
-    "published_at": "2026-03-27T20:28:22.708Z",
     "updated_at": "2026-04-01T16:41:58.186Z"
->>>>>>> f1a1af595bb33ebcd979edfa743736f38d40c0c7
   }
 ]
