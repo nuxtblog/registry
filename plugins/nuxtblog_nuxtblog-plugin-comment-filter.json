@@ -1,0 +1,21 @@
+{
+  "name": "nuxtblog-plugin-comment-filter",
+  "title": "评论过滤",
+  "description": "评论垃圾过滤：关键词黑名单、邮箱域名屏蔽、链接密度检测、长度限制",
+  "version": "0.1.1",
+  "author": "nuxtblog",
+  "icon": "i-tabler-shield-check",
+  "repo": "nuxtblog/nuxtblog-plugin-comment-filter",
+  "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-comment-filter",
+  "tags": [
+    "spam",
+    "comment",
+    "filter",
+    "moderation"
+  ],
+  "type": "hook",
+  "is_official": false,
+  "license": "MIT",
+  "published_at": "2026-04-01T16:41:55.266Z",
+  "updated_at": "2026-04-01T16:41:55.266Z"
+}
