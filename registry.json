@@ -3,7 +3,7 @@
     "name": "nuxtblog-plugin-ai-polish",
     "title": "AI 写作助手",
     "description": "AI 写作助手：润色、摘要、从 URL 生成文章。展示 routes + contributes + admin_js + AI 服务全链路",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "nuxtblog",
     "icon": "i-tabler-sparkles",
     "repo": "nuxtblog/nuxtblog-plugin-ai-polish",
@@ -16,7 +16,7 @@
     "is_official": false,
     "license": "MIT",
     "published_at": "2026-04-03T02:07:35.731Z",
-    "updated_at": "2026-04-03T02:36:53.598Z"
+    "updated_at": "2026-04-03T03:54:25.211Z"
   },
   {
     "name": "nuxtblog-plugin-comment-guard",
