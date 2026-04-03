@@ -1,0 +1,81 @@
+name: Auto Approve & Merge PR
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ⏳ 等 GitHub 计算 mergeable（必须）
+      - name: Wait for mergeable status
+        run: sleep 5
+
+      # 🔑 生成 GitHub App token
+      - name: Generate App Token
+        id: app-token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+          installation_id: ${{ secrets.APP_INSTALLATION_ID }}
+
+      # 🔍 获取 PR 状态
+      - name: Check PR
+        id: check
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            const pr = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number
+            });
+
+            core.setOutput("mergeable", pr.data.mergeable);
+            core.setOutput("draft", pr.data.draft);
+
+      # ✅ 自动 approve
+      - name: Approve PR
+        if: steps.check.outputs.mergeable == 'true' && steps.check.outputs.draft == 'false'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            await github.rest.pulls.createReview({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              event: "APPROVE"
+            });
+
+      # 🚀 自动 merge
+      - name: Merge PR
+        if: steps.check.outputs.mergeable == 'true' && steps.check.outputs.draft == 'false'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            await github.rest.pulls.merge({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              merge_method: "squash"
+            });
+
+      # ❌ 有冲突提示
+      - name: Comment if conflict
+        if: steps.check.outputs.mergeable != 'true'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ steps.app-token.outputs.token }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: "❌ PR has conflicts, cannot auto-merge."
+            });
