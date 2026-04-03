@@ -2,19 +2,18 @@
   "name": "nuxtblog-plugin-telegram-notify",
   "title": "Telegram 通知",
   "description": "文章发布后通过 Telegram Bot 推送通知到指定频道或群组",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "author": "nuxtblog",
   "icon": "i-tabler-brand-telegram",
   "repo": "nuxtblog/nuxtblog-plugin-telegram-notify",
   "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-telegram-notify",
-  "tags": ["telegram", "notification"],
-  "type": "integration",
+  "tags": [
+    "telegram",
+    "notification"
+  ],
+  "type": "hook",
   "is_official": true,
   "license": "MIT",
-  "sdk_version": "",
-  "trust_level": "official",
-  "capabilities": ["http"],
-  "features": ["webhooks"],
   "published_at": "2026-04-01T16:42:00.067Z",
-  "updated_at": "2026-04-01T16:42:00.067Z"
+  "updated_at": "2026-04-03T02:38:30.917Z"
 }
