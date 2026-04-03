@@ -2,7 +2,7 @@
   "name": "nuxtblog-plugin-comment-guard",
   "title": "评论防护",
   "description": "评论防护：垃圾过滤 + 速率限制 + AI 审核 + Webhook 通知。展示 filter chain + pipeline + webhook + 插件间通信",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "nuxtblog",
   "icon": "i-tabler-shield-check",
   "repo": "nuxtblog/nuxtblog-plugin-comment-guard",
@@ -16,5 +16,5 @@
   "is_official": true,
   "license": "MIT",
   "published_at": "2026-04-03T00:00:00.000Z",
-  "updated_at": "2026-04-03T02:37:40.086Z"
+  "updated_at": "2026-04-03T03:55:17.473Z"
 }
