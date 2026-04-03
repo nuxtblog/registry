@@ -42,7 +42,7 @@
     "name": "nuxtblog-plugin-view-counter",
     "title": "浏览量统计",
     "description": "精准文章浏览量统计。展示 DB Migration + store + 自定义路由 + public_js + 前端页面",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "nuxtblog",
     "icon": "i-tabler-chart-bar",
     "repo": "nuxtblog/nuxtblog-plugin-view-counter",
@@ -55,7 +55,7 @@
     "is_official": true,
     "license": "MIT",
     "published_at": "2026-04-03T00:00:00.000Z",
-    "updated_at": "2026-04-03T02:23:35.516Z"
+    "updated_at": "2026-04-03T02:38:58.904Z"
   },
   {
     "name": "nuxtblog-plugin-telegram-notify",
