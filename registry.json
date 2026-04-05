@@ -42,7 +42,7 @@
     "name": "nuxtblog-plugin-view-counter",
     "title": "浏览量统计",
     "description": "精准文章浏览量统计。展示 DB Migration + store + 自定义路由 + public_js + 前端页面",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "nuxtblog",
     "icon": "i-tabler-chart-bar",
     "repo": "nuxtblog/nuxtblog-plugin-view-counter",
@@ -55,7 +55,7 @@
     "is_official": true,
     "license": "MIT",
     "published_at": "2026-04-03T00:00:00.000Z",
-    "updated_at": "2026-04-03T02:38:58.904Z"
+    "updated_at": "2026-04-03T03:56:28.064Z"
   },
   {
     "name": "nuxtblog-plugin-telegram-notify",
@@ -139,7 +139,7 @@
     "name": "pinyin-slug",
     "title": "拼音 Slug",
     "description": "发布/修改文章时，自动将中文标题转换为拼音 slug（支持中英文混排）",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "author": "nuxtblog",
     "icon": "i-tabler-language",
     "repo": "nuxtblog/nuxtblog-plugin-pinyin-slug",
@@ -153,6 +153,6 @@
     "is_official": true,
     "license": "MIT",
     "published_at": "2026-03-27T20:28:22.708Z",
-    "updated_at": "2026-04-03T02:38:04.474Z"
+    "updated_at": "2026-04-03T03:55:25.238Z"
   }
 ]
