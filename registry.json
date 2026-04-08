@@ -55,17 +55,13 @@
   {
     "name": "nuxtblog-plugin-comment-guard",
     "title": "评论防护",
-    "description": "评论反垃圾：关键词屏蔽、邮箱域名过滤、链接检测、速率限制、长度限制",
-    "version": "2.0.0",
+    "description": "评论反垃圾：屏蔽词、速率限制、AI 审核",
+    "version": "2.0.1",
     "author": "nuxtblog",
     "icon": "i-tabler-shield-check",
     "repo": "nuxtblog/nuxtblog-plugin-comment-guard",
     "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-comment-guard",
-    "tags": [
-      "comment",
-      "spam",
-      "moderation"
-    ],
+    "tags": [],
     "type": "builtin",
     "runtime": "compiled",
     "is_official": true,
@@ -81,7 +77,7 @@
       "events"
     ],
     "published_at": "2026-04-03T00:00:00.000Z",
-    "updated_at": "2026-04-08"
+    "updated_at": "2026-04-08T19:13:17.548Z"
   },
   {
     "name": "nuxtblog-plugin-view-counter",
