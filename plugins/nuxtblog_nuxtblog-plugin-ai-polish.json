@@ -2,20 +2,26 @@
   "name": "nuxtblog-plugin-ai-polish",
   "title": "AI 润色",
   "description": "AI 驱动的内容润色、摘要生成、标签推荐和翻译",
-  "version": "2.0.0",
+  "version": "2.0.10",
   "author": "nuxtblog",
   "icon": "i-tabler-sparkles",
   "repo": "nuxtblog/nuxtblog-plugin-ai-polish",
   "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-ai-polish",
-  "tags": ["ai", "writing", "tools"],
+  "tags": [],
   "type": "builtin",
   "runtime": "compiled",
   "is_official": true,
   "license": "MIT",
   "sdk_version": "1.0.0",
   "trust_level": "official",
-  "capabilities": ["http", "store"],
-  "features": ["routes", "events"],
+  "capabilities": [
+    "http",
+    "store"
+  ],
+  "features": [
+    "routes",
+    "events"
+  ],
   "published_at": "2026-04-03T02:07:35.731Z",
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-08T10:50:12.435Z"
 }
