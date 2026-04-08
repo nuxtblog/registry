@@ -3,7 +3,7 @@
     "name": "nuxtblog-plugin-hello-js",
     "title": "Hello JS",
     "description": "Goja JS 插件示例，展示路由注册和设置读取",
-    "version": "0.2.2",
+    "version": "0.2.4",
     "author": "nuxtblog",
     "icon": "i-tabler-brand-javascript",
     "repo": "nuxtblog/nuxtblog-plugin-hello-js",
@@ -18,11 +18,12 @@
     "license": "MIT",
     "sdk_version": "1.0.0",
     "trust_level": "official",
+    "capabilities": [],
     "features": [
       "routes"
     ],
     "published_at": "2026-04-08T00:00:00Z",
-    "updated_at": "2026-04-08T00:00:00Z"
+    "updated_at": "2026-04-08T08:56:45.740Z"
   },
   {
     "name": "nuxtblog-plugin-ai-polish",
