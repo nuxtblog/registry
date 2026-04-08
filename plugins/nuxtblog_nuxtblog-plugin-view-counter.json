@@ -1,21 +1,33 @@
 {
   "name": "nuxtblog-plugin-view-counter",
   "title": "浏览量统计",
-  "description": "精准文章浏览量统计与可视化分析仪表盘",
-  "version": "2.0.0",
+  "description": "精准文章浏览量统计与可视化分析",
+  "version": "2.0.1",
   "author": "nuxtblog",
   "icon": "i-tabler-chart-bar",
   "repo": "nuxtblog/nuxtblog-plugin-view-counter",
   "homepage": "https://github.com/nuxtblog/nuxtblog-plugin-view-counter",
-  "tags": ["analytics", "views"],
-  "type": "full",
+  "tags": [],
+  "type": "builtin",
   "runtime": "compiled",
   "is_official": true,
   "license": "MIT",
   "sdk_version": "1.0.0",
   "trust_level": "official",
-  "capabilities": ["store", "db"],
-  "features": ["routes", "migrations", "admin_js", "public_js", "pages", "filters", "events", "contributes"],
+  "capabilities": [
+    "store",
+    "db"
+  ],
+  "features": [
+    "routes",
+    "migrations",
+    "admin_js",
+    "public_js",
+    "pages",
+    "filters",
+    "events",
+    "contributes"
+  ],
   "published_at": "2026-04-03T00:00:00.000Z",
-  "updated_at": "2026-04-08"
+  "updated_at": "2026-04-08T10:57:19.349Z"
 }
