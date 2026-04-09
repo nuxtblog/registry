@@ -218,7 +218,7 @@
     "name": "nuxtblog-plugin-pinyin-slug",
     "title": "拼音 Slug",
     "description": "发布/修改文章时，自动将中文标题转换为拼音 slug",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "author": "nuxtblog",
     "icon": "i-tabler-language",
     "repo": "nuxtblog/nuxtblog-plugin-pinyin-slug",
@@ -239,6 +239,6 @@
       "filters"
     ],
     "published_at": "2026-03-27T20:28:22.708Z",
-    "updated_at": "2026-04-08T10:56:41.425Z"
+    "updated_at": "2026-04-09T17:53:59.190Z"
   }
 ]
