@@ -3,7 +3,7 @@
     "name": "nuxtblog-plugin-dep-test",
     "title": "Dependency Test",
     "description": "依赖管理测试插件，依赖 hello-js 并读取其配置",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "author": "nuxtblog",
     "icon": "i-tabler-git-branch",
     "repo": "nuxtblog/nuxtblog-plugin-dep-test",
@@ -22,7 +22,7 @@
     "capabilities": [],
     "features": [],
     "published_at": "2026-04-09T05:20:08.166Z",
-    "updated_at": "2026-04-09T05:20:08.166Z"
+    "updated_at": "2026-04-09T05:48:19.736Z"
   },
   {
     "name": "nuxtblog-plugin-hello-js",
