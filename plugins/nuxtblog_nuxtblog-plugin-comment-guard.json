@@ -2,7 +2,7 @@
   "name": "nuxtblog-plugin-comment-guard",
   "title": "评论防护",
   "description": "评论反垃圾：屏蔽词、速率限制、AI 审核",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "author": "nuxtblog",
   "icon": "i-tabler-shield-check",
   "repo": "nuxtblog/nuxtblog-plugin-comment-guard",
@@ -23,5 +23,5 @@
     "events"
   ],
   "published_at": "2026-04-03T00:00:00.000Z",
-  "updated_at": "2026-04-10T10:21:42.196Z"
+  "updated_at": "2026-04-10T20:14:26.987Z"
 }
