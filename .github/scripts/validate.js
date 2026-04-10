@@ -201,10 +201,24 @@ for (const filePath of changedFiles) {
       typeof plugin.is_official === "boolean",
       `${prefix}: is_official 必须是 boolean`,
     );
-    check(
-      plugin.is_official === false,
-      `${prefix}: is_official 不允许在 PR 中自行设为 true，由维护者审核后标注`,
-    );
+    if (plugin.is_official === true) {
+      // 只有当 PR 改变了此字段时才拦截；base 上已经是 true 则放行
+      let baseOfficial;
+      try {
+        const baseContent = execSync(
+          `git show origin/main:${filePath}`,
+          { encoding: "utf-8" },
+        );
+        baseOfficial = JSON.parse(baseContent).is_official;
+      } catch {
+        // 文件在 base 上不存在（新文件），视为旧值 undefined
+        baseOfficial = undefined;
+      }
+      check(
+        baseOfficial === true,
+        `${prefix}: is_official 不允许在 PR 中自行设为 true，由维护者审核后标注`,
+      );
+    }
   }
 
   // tags
@@ -260,10 +274,23 @@ for (const filePath of changedFiles) {
       VALID_TRUST_LEVELS.includes(plugin.trust_level),
       `${prefix}: trust_level 无效，可选值: ${VALID_TRUST_LEVELS.join(", ")}`,
     );
-    check(
-      plugin.trust_level !== "official",
-      `${prefix}: trust_level 不允许在 PR 中自行设为 "official"，由维护者审核后标注`,
-    );
+    if (plugin.trust_level === "official") {
+      // 只有当 PR 改变了此字段时才拦截；base 上已经是 official 则放行
+      let baseTrust;
+      try {
+        const baseContent = execSync(
+          `git show origin/main:${filePath}`,
+          { encoding: "utf-8" },
+        );
+        baseTrust = JSON.parse(baseContent).trust_level;
+      } catch {
+        baseTrust = undefined;
+      }
+      check(
+        baseTrust === "official",
+        `${prefix}: trust_level 不允许在 PR 中自行设为 "official"，由维护者审核后标注`,
+      );
+    }
   }
 
   // capabilities

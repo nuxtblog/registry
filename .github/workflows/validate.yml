@@ -6,6 +6,9 @@ on:
       - plugins/**
       - .github/scripts/validate.js
 
+permissions:
+  pull-requests: write
+
 jobs:
   validate:
     runs-on: ubuntu-latest
