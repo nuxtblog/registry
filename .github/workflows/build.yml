@@ -8,18 +8,28 @@ on:
       - plugins/**
       - .github/scripts/build.js
 
+  # Also trigger when PRs are merged (covers GITHUB_TOKEN merges that don't re-trigger push workflows)
+  pull_request:
+    types: [closed]
+    branches: [main]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    # For pull_request trigger, only run if actually merged (not just closed)
+    if: github.event_name == 'push' || github.event.pull_request.merged == true
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Build registry.json
         run: node .github/scripts/build.js
 
-      - name: Commit registry.json
+      - name: Commit & push registry.json
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
