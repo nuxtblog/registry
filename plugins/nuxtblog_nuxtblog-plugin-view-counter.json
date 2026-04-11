@@ -2,7 +2,7 @@
   "name": "nuxtblog-plugin-view-counter",
   "title": "浏览量统计",
   "description": "精准文章浏览量统计与可视化分析",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "author": "nuxtblog",
   "icon": "i-tabler-chart-bar",
   "repo": "nuxtblog/nuxtblog-plugin-view-counter",
@@ -29,5 +29,5 @@
     "contributes"
   ],
   "published_at": "2026-04-03T00:00:00.000Z",
-  "updated_at": "2026-04-11T16:55:10.872Z"
+  "updated_at": "2026-04-11T17:18:58.545Z"
 }
